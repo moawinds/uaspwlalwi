@@ -19,7 +19,7 @@ $password = [
 ];
 ?>
 
-<body class="bg-gradient-primary">
+<body class="bg-gradient-info"> <!-- Ubah background jadi info -->
 
 <div class="container">
     <div class="row justify-content-center">
@@ -28,11 +28,21 @@ $password = [
             <div class="card o-hidden border-0 shadow-lg my-5">
                 <div class="card-body p-0">
                     <div class="row">
-                        <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                        <!-- KIRI: Gambar Login -->
+                        <div class="col-lg-6 d-none d-lg-block bg-login-image" 
+                             style="background-image: url('<?= base_url('img/login_side.jpg') ?>'); background-size: cover; background-position: center;">
+                        </div>
+
+                        <!-- KANAN: Form Login -->
                         <div class="col-lg-6">
                             <div class="p-5">
-                                <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+
+                                <!-- Gambar Logo Atas -->
+                                <div class="text-center mb-4">
+                                    <img src="<?= base_url('img/login_banner.jpg') ?>" 
+                                         alt="Login Image" 
+                                         class="img-fluid" style="max-width: 150px;">
+                                    <h1 class="h4 text-gray-900 mt-3">Welcome Back!</h1>
                                 </div>
 
                                 <!-- Flashdata -->
@@ -56,7 +66,7 @@ $password = [
                                 </div>
 
                                 <div class="form-group">
-                                    <?= form_submit('submit', 'Login', ['class' => 'btn btn-primary btn-block']) ?>
+                                    <?= form_submit('submit', 'Login', ['class' => 'btn btn-info btn-block']) ?> <!-- Ubah tombol jadi info -->
                                 </div>
 
                                 <?= form_close() ?>

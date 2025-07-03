@@ -1,5 +1,5 @@
 <!-- Topbar -->
-<nav class="navbar navbar-expand navbar-dark bg-primary topbar mb-4 shadow">
+<nav class="navbar navbar-expand navbar-dark bg-gradient-info topbar mb-4 shadow">
 
     <!-- Sidebar Toggle (Topbar) -->
     <form class="form-inline">
@@ -10,7 +10,7 @@
 
     <!-- Brand or Tagline -->
     <span class="navbar-brand font-weight-bold text-white d-none d-sm-inline">
-        <i class="fas fa-microchip"></i> ELECTRONIK ADMIN PANEL
+        <i class="fas fa-microchip"></i> ALWI SHOP OFFICIAL
     </span>
 
     <!-- Topbar Search -->
